@@ -1,0 +1,25 @@
+////Dutch national flag   Arrays Part- I
+
+#include <bits/stdc++.h> 
+void sort012(int *a, int n)
+{
+   int f=0,m=0,s=n-1;
+   while(m<=s)
+   {
+       if(a[m]==0)
+       {
+           swap(a[f],a[m]);
+           f++;m++;
+       }
+       else if(a[m]==2)
+       {
+           swap(a[m],a[s]);
+           s--;
+       }
+       else
+       {
+           m++;
+       }
+   }
+    
+}
